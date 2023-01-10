@@ -1,3 +1,14 @@
+.page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 95%;
+  margin-top: 5rem;
+  margin: auto;
+}
+
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -23,4 +34,22 @@
     color: rgb(5, 43, 83);
   }
 
+  .text-container {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+  }
   
+  /* .text-container {
+    display: flex;
+    align-items: left;
+    flex-direction:column;
+    color: rgb(5, 43, 83);
+    margin-right: 30px;
+    font-family:'Futura';
+    font-size:14px;
+    margin-top: 10%;
+  } */
+  
+
+
