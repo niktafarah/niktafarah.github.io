@@ -1,11 +1,5 @@
 .portrait {
-  /* width: 60%;
-  /* border: 1px solid black; */
-  /* border-radius: 10px; */
-  /* aspect-ratio: 1; */
   float: right;
-  /* width: 50vw; */
-  /* display: block; */
   height: 100%;
   width: 100%;
   object-fit: cover ;
@@ -22,57 +16,10 @@
   align-items: center;
   flex-direction: row;
   height: 100%;
-}
-
-.txt-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  color: rgb(5, 43, 83);
-}
-
-.txt2-container {
-  margin-right: 30px;
-  font-family:'Futura';
-  font-size:20px;
-}
-
-
-a.button1{
-  display:inline-block;
-  padding:0.3em 1.2em;
-  margin:0 0.3em 0.3em 0;
-  border-radius:2em;
-  box-sizing: border-box;
-  text-decoration:none;
-  font-family:'Futura';
-  font-weight:300;
-  color:#ffffff;
-  background-color:rgb(5, 43, 83);
-  text-align:center;
-  transition: all 0.2s;
-}
-
-a.button1:hover{
-  background-color:#846fc987;
-}
-
-
-/* .picture:hover {
-  filter: brightness(80%);
-} */
-
-.page-container {
   width: 95%;
   margin-top: 5rem;
   margin: auto;
 }
-  
-/* Add a black background color to the top navigation */
-/* .topnav {
-  background-color: rgb(51, 51, 51);
-  overflow: hidden;
-} */
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -99,33 +46,36 @@ a.button1:hover{
   color: rgb(5, 43, 83);
 }
 
-/* 
-@media all and (max-width:30em){
-  a.button3{
-  display:block;
-  margin:0.2em auto;
-  }
-}
 
-.picture-container {
+.text-container {
   display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-  gap: 12px;
+  align-items: center;
+  flex-direction: row;
+  color: rgb(5, 43, 83);
 }
 
-body {
-  background-color: rgb(255, 255, 255);
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1f0084;
+.text2-container {
+  margin-right: 30px;
+  font-family:'Futura';
+  font-size:20px;
 }
 
-.picture {
-  width: 300px;
-  border: 1px solid black;
-  border-radius: 10px;
-  cursor: pointer;
-  object-fit: cover;
-  aspect-ratio: 1;
-} */
+
+a.button1{
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Futura';
+  font-weight:300;
+  color:#ffffff;
+  background-color:rgb(5, 43, 83);
+  text-align:center;
+  transition: all 0.2s;
+}
+
+a.button1:hover{
+  background-color:#846fc987;
+}
