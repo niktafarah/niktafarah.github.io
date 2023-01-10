@@ -21,16 +21,30 @@
   margin: auto;
 }
 
+.topnav {
+  overflow: hidden;
+  float: left;
+  display: block;
+  position: sticky;
+  top: 0;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
   color: rgb(5, 43, 83);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   font-family: 'Futura';
+
 }
+
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -78,4 +92,16 @@ a.button1{
 
 a.button1:hover{
   background-color:#846fc987;
+}
+
+.button-container {
+  position:absolute
+}
+
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  float:center;
 }
