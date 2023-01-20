@@ -1,16 +1,3 @@
-.portrait {
-  float: right;
-  height: 100%;
-  width: 100%;
-  object-fit: cover ;
-}
-
-.image-container {
-  height: 100vh;
-  width: 60vw;
-  float: right;
-}
-
 .page-container {
   display: flex;
   align-items: center;
@@ -21,59 +8,36 @@
   margin: auto;
 }
 
-.topnav {
-  overflow: hidden;
-  float: left;
-  display: block;
-  position: sticky;
-  top: 0;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  color: rgb(5, 43, 83);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: 'Futura';
-
-}
-
-/* .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  /* background-color: #ddd; */
-  color: rgb(5, 43, 83);
-  font-size: 18px;
-  font-weight: 900;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  font-weight: 700;
-  color: rgb(5, 43, 83);
-}
-
-
 .text-container {
   display: flex;
   align-items: center;
   flex-direction: row;
   color: rgb(5, 43, 83);
+  margin-right: 30px;
+}
+
+.header {
+  font-family:'Futura';
+  font-size:60px;
 }
 
 .text2-container {
-  margin-right: 30px;
   font-family:'Futura';
   font-size:20px;
 }
 
+.image-container {
+  height: 100vh;
+  width: 60vw;
+  float: right;
+}
+
+.portrait {
+  float: right;
+  height: 100%;
+  width: 100%;
+  object-fit: cover ;
+}
 
 a.button1{
   display:inline-block;
@@ -98,7 +62,7 @@ a.button1:hover{
   position:absolute
 }
 
-.icon {
+.envelope {
   position: relative;
   display: flex;
   align-items: center;

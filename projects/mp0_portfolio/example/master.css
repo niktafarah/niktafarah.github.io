@@ -1,0 +1,98 @@
+  /* Style the links inside the navigation bar */
+.topnav a {
+    display:block;
+    color: rgb(5, 43, 83);
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Optima';
+    font-weight:bolder;
+    float: center;
+    width:40%;
+} 
+  
+.topnav {
+    display: flex;
+    flex-direction:row;
+    margin: 0 -1em;
+}
+
+  /* Change the color of links on hover */
+.topnav a:hover { 
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 43, 83);
+    font-size: 18px;
+    font-weight: 900;
+}
+  
+  /* Add a color to the active/current link */
+.topnav a.active {
+    font-weight: 900;
+    font-size:18px;
+    color: rgb(5, 43, 83);
+}
+
+/* nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    transition: top 500ms ease-in-out;
+  }
+  
+  nav.scroll-up,
+  nav:focus-within {
+    top: 0;
+  }
+  
+  nav.scroll-down {
+    top: -100%;
+  }
+  
+  nav a {
+    color: rgb(5, 43, 83);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    padding: 14px 16px;
+  }
+ */
+
+.page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 95%;
+  margin-top: 5rem;
+  margin: auto;
+} */
+
+.text-container {
+    color: rgb(5, 43, 83);
+    font-family:'Optima';
+    font-size:14px;
+}
+
+.container {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    color: rgb(5, 43, 83);
+    margin-right: 30px;
+    margin-top: 10%;
+    font-size:20px;
+    font-family:'Optima';
+}
+
+.header {
+    font-family:'Futura';
+    color: rgb(5, 43, 83);
+    font-size:60px;
+}
+
+  
