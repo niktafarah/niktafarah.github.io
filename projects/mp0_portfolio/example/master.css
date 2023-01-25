@@ -1,17 +1,24 @@
-  /* Style the links inside the navigation bar */
+.topnav-container {
+  display: flex;
+  flex-direction:row;
+}
+
+/* Style the links inside the navigation bar */
 .topnav a {
     display:block;
     color: rgb(5, 43, 83);
     text-align: center;
-    padding: 14px 5px;
+    padding: 50px 5px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Optima';
     font-weight:bolder;
-    float: center;
     width:40%;
+    overflow: hidden;
 } 
   
+
+
 .topnav {
     display: flex;
     flex-direction:row;
@@ -33,44 +40,15 @@
     color: rgb(5, 43, 83);
 }
 
-/* nav {
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #ffffff;
-    transition: top 500ms ease-in-out;
-  }
-  
-  nav.scroll-up,
-  nav:focus-within {
-    top: 0;
-  }
-  
-  nav.scroll-down {
-    top: -100%;
-  }
-  
-  nav a {
-    color: rgb(5, 43, 83);
-    text-decoration: none;
-    font-size: 0.9rem;
-    letter-spacing: 0.2em;
-    padding: 14px 16px;
-  }
- */
-
 .page-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: row;
   height: 100%;
   width: 95%;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   margin: auto;
-} */
+}
 
 .text-container {
     color: rgb(5, 43, 83);
@@ -80,7 +58,7 @@
 
 .container {
     display: flex;
-    align-items: left;
+    /* align-items: left; */
     flex-direction: column;
     color: rgb(5, 43, 83);
     margin-right: 30px;
@@ -93,6 +71,13 @@
     font-family:'Futura';
     color: rgb(5, 43, 83);
     font-size:60px;
+    position: left;
 }
 
-  
+h1 {
+  position: left;
+}
+
+.description {
+  font-size: 20px;
+}

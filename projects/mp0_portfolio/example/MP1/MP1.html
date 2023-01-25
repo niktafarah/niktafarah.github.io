@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html id="MP0">
+    <head>
+        <!-- <link rel="stylesheet" href="./MP0.css"/> -->
+        <link rel="stylesheet" href="../master.css"/>
+        <link rel="stylesheet" href="../master.js"/>
+    </head>
+    <nav>
+        <!-- <div class="logo">
+          Logo
+        </div> -->
+        <div class="topnav">
+          <a href="../index.html">Home</a>
+          <a href="../AboutMe/AboutMe.html">About Me</a>
+          <a href="./tbd">Contact</a>
+          <a class="active" href="../MyWork/MyWork.html">My Work</a>
+          <a href="../Cheatsheet/cheatsheet.html">Cheatsheet</a>
+        </div>
+    </nav>
+    <body>
+        <div class="page-container">
+            <div class="container">
+                <h1 class="header">MP1 - Browser Extension</h1>
+                    <p><strong>Overview and Usage</strong></p>
+                    <ol>
+                    It can be difficult to stay focused while getting work done, especially since entertainment is at a click of a button.
+                    This is why I decided to make a browser extension that creatively blocks the site I tend to get distracted on, Netflix.
+                    With this extension, while it is active, you will not be able to see any Netflix preview pictures, and to be able to see what
+                    movies and shows there are, you must individually hover over every single show and movie. This becomes tedious over time, and allows
+                    the user to think twice about wasting their time. To add on, every preview photo on Netflix will be replaced by a gif of the meme "Just Do It!", 
+                    in hopes of motivating the user to "just do it" and to stop getting distracted (as the genre titles say).
+
+                    Since my browser extension is not hosted online, in order to run the code you must download the files via GitHub and
+                    follow instruction in developer mode on Google Chrome to load an unpacked extension from your files. From there you can bookmark
+                    the extension and pull up Netflix, and the extension should be good to go.
+                    <br> 
+                    <div class="gif-container">
+                        <video controls loop class="gif" src="../438/mp1.mp4" style="width:500px"></video>
+                    </div>
+              
+                    <p><strong>Development Process</strong></p>
+                    <ol>
+                        <li>Before beginning this assignment, I watched and followed a long on a Youtube video
+                            about changing images on a screen into a different image (link provided in kudo section
+                            below). After learning the steps in the video and understanding the reasoning behind each
+                            step, I started working on the manifest.json file first. In that file, I named my browser extension,
+                            gave it a description, set icons for the extension, and assigned a popup.html to it. Most importantly,
+                            in the content script, I put down Netflix's website for the matches so that my browser extension 
+                            only applies to Netflix websites. I struggled a lot with this step because the tutorial said to use anyurl
+                            within the quotes, but I didn't want my extension to apply to all URLs. 
+                            <br><img class="pic" src="tutorial.png" style="width:500px"> </img>
+                        </li>
+                        <li>Next I moved on to the content.js file. This file inlcudes a method that includes justDoIt that lets
+                            it equal the gif I wanted on Netflix's website.
+                            <br><img class="pic" src="matches.png" style="width:500px"> </img>
+                            By using the method, Element.getElementsByTagName("image"), I was able 
+                            to parse through every image on the loaded screen, and set the image to equal the new justDoIt object. I first used a for loop to go through images on the screen and randomly select a gif that I wanted to use. But I realized I just want one gif, so I don’t need to use a randomized function. 
+                            <br><img class="pic" src="random.png" style="width:500px"> </img>
+                            I took the randomized function away to see if it works, and it did. But I still wasn’t sure if a for loop was necessary.
+                            <br><img class="pic" src="content.png" style="width:500px"> </img>
+                        </li>
+                        <li>The rest of the steps are included setting up a popup.html for the popup and styling it using a css file. The bulk of the 
+                            project falls in manifest.json and content.js because that's where I had the most difficulty with.
+                        </li>
+                    </ol>
+    
+                    <br>
+                
+                    <p><strong>Issue Deep-Dive</strong></p>
+                    <ul>
+                        <li>As previously mentioned, an issue I ran into was making the browser extension Netflix specific. I began writing the code for the 
+                            extension first using the anyurl code, and later tried different ways of making it just Netflix website specific. In order to resolve it, it
+                            actually ended up being a lot simpler than I thought. At the end of the url I had to put an apostraphe and a backslash.
+                        </li>
+                    </ul>
+           
+                
+                    <p><strong>Ideas and Future</strong></p>
+                    <ul>
+                        <li>In the future, I would like to add an off switch in the pop-up that comes up on Chrome. With this,
+                            the user can have the option to stop the Netflix pictures from being blocked without actually deleting the extension.
+                            Something else I would like to add would be to completely take off any descriptions that already exist on Netflix,
+                            and not just the headlines.
+                        </li>
+                    </ul>
+
+                    <p><strong>Kudos</strong></p>
+                    <a href="https://www.youtube.com/watch?v=zHIryKuhYA4">https://www.youtube.com/watch?v=zHIryKuhYA4</a>
+                    <br>
+                    <a href="https://developer.chrome.com/docs/extensions/mv3/match_patterns/">https://developer.chrome.com/docs/extensions/mv3/match_patterns/</a>
+            </div>
+        </div> 
+    </body>
+</html>

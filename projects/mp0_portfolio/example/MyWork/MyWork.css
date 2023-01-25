@@ -1,0 +1,24 @@
+.experiences a {
+    display:block;
+    color: rgb(5, 43, 83);
+    text-align: left;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Optima';
+    font-weight:bolder;
+    float: center;
+    height:200px;
+    width: 80%;
+    background-color: rgba(5, 43, 83, 0.294);
+} 
+
+.experiences a:hover {
+    color: rgba(5, 43, 83, 0.421);
+}
+
+.experiences {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
