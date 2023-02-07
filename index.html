@@ -2,48 +2,115 @@
 <html id="home">
   <head>
     <link rel="stylesheet" href="./master.css" />
+    <link rel="stylesheet" href="./master.js" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../MyWork/MyWork.css" />
+    <link rel="stylesheet" href="../Contact/contact.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   
-  <nav>
+  <nav class="nav">
     <!-- <div class="logo">
       Logo
     </div> -->
-    <div class="topnav">
-      <a class="active" href="./index.html">Home</a>
-      <a href="./AboutMe/AboutMe.html">About Me</a>
-      <a href="./tbd">Contact</a>
-      <a href="./MyWork/MyWork.html">My Work</a>
-      <a href="./Cheatsheet/cheatsheet.html">Cheatsheet</a>
+    <div class="topnav" id="topnav">
+      <a class="active" href="#intro">Home</a>
+      <a href="#section-1" >About Me</a>
+      <a href="#section-2">My Work</a>
+      <a href="#section-3">Contact</a>
     </div>
   </nav>
 
   <body>
-    <div class="page-container">
-      
-      <div class="text-container">
-        <div class="text2-container">
+    <div class="page-container" id="intro">
+      <div class="container" id="index">
+        <div class="text-container">
           <h1 class="header"><em>Hi, I'm Nikta!</em></h1> 
           <p>I'm looking for part-time and internship roles in user-experience design, product design, human factors, and project management internship positions.</p>
           <p>I'm currently based in Seattle, Washington, studying Human Centered Design and Engineering at the University of Washington.</p>
-          
+
           <div class="button-container">
-            <a href="./AboutMe/AboutMe.html"
-              class="button1">Let's get to know each other!
+            <a href="#section-1"
+              class="button1" >Let's get to know each other!
             </a>
-
-            <!-- <div class="envelope">
-              <i class="fa fa-envelope" style="font-size:36px"></i>
-            </div> -->
           </div>
-
         </div>
         <div class="image-container">
           <img class="portrait" src="Portfoliopic.jpeg" alt="Picture of Nikta Farahani" />
         </div>
       </div>
     </div>
+
+    <div class="page-container" id="section-1">
+
+      <div class="container">
+        <br>
+        <h1 class="header">A little about me...</h1> 
+          <p> <strong>I'm a fourth year Human Centered Design and Engineering (HCDE) 
+                  student at the University of Washington (UW) with a strong background
+                  in the medical field.</strong></p>
+          <p> In 2018, I attended UW's Math Academy where I became acquainted with HCDE with 
+                  the help of Dr. Sheldon Levias. I was fascinated by the field
+                  of HCDE and its focus on the human experience, which had always been my focus
+                  while volunteering and shadowing in healthcare. One project that my team worked on during
+                  our months at Math Academy was designing an app to help students' mental and emotional health.
+                  We spent time researching, prototyping, and interviewing UW students on their thoughts about the app.</p>
+          <p>This project sparked a big interest in me, the cross between research, design, and communication
+                  was one that I enjoyed. As I participated in HCDE projects during Math Academy, links quickly formed between
+                  shortcomings I had witnessed in healthcare and what HCDE had to offer in solutions. </p>
+          <p>A little more about me, I enjoy activities that allow me to utilize my creativity, design, or artistic skills.</p>
+          <p><strong>When I'm not in class or working on homework, you can find me...</strong></p>
+          
+          <ul>
+            <li>Drawings and paintings</li>
+              <li>Making jewelry</li>
+              <li>Knitting</li>
+              <li>Baking</li>
+              <li>Designing logos</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="page-container" id="section-2">
+      <div class="container">
+        <br>
+        <h1 class="header">Personal and Work Experiences</h1> 
+        <div class="experiences">
+            <a href="../CaseStudy/CaseStudy.html" target="_blank" rel="noopener noreferrer">UX Case Studies</a>
+            <br>
+            <a href="../438/438.html" target="_blank" rel="noopener noreferrer">HCDE 438</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-3">
+      <br>
+      <br>
+    <div class="page-container" id="contactbox">
+        <h1 id="contactid">&bull; Contact &bull;</h1>
+        <div class="underline">
+        </div>
+        <form accept-charset="UTF-8" action="https://usebasin.com/f/9e03fab42391" enctype="multipart/form-data" method="POST" target="_blank" rel="noopener noreferrer">
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="My name is" name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+          </div>
+          <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+          </div>
+        </form>
+    </div>
+    </div>
+
     <script src="index.js" defer></script>
   </body>
+
 </html>

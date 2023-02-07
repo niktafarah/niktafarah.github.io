@@ -1,6 +1,12 @@
-.topnav-container {
-  display: flex;
-  flex-direction:row;
+nav {
+  position:sticky;
+  position: -webkit-sticky;
+  top: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.578);
+  z-index: 999;
+  height:50px;
+  padding: 10px 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -8,70 +14,74 @@
     display:block;
     color: rgb(5, 43, 83);
     text-align: center;
-    padding: 50px 5px;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Optima';
-    font-weight:bolder;
+    font-weight:lighter;
     width:40%;
     overflow: hidden;
+    padding: 10px 0;
 } 
-  
-
 
 .topnav {
     display: flex;
     flex-direction:row;
     margin: 0 -1em;
+    position:sticky;
 }
 
   /* Change the color of links on hover */
 .topnav a:hover { 
-    background-color: rgb(255, 255, 255);
-    color: rgb(5, 43, 83);
-    font-size: 18px;
-    font-weight: 900;
+  color: rgb(5, 43, 83);
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 0 0 12px rgba(5, 43, 83, 0.645);
 }
   
   /* Add a color to the active/current link */
 .topnav a.active {
-    font-weight: 900;
-    font-size:18px;
+    font-weight: bolder;
+    font-size:20px;
     color: rgb(5, 43, 83);
 }
 
 .page-container {
   display: flex;
-  /* align-items: center; */
-  flex-direction: row;
+  flex-direction: column;
   height: 100%;
   width: 95%;
-  /* margin-top: 5rem; */
   margin: auto;
 }
 
-.text-container {
+.container {
+  display: flex;
+  flex-direction: column;
+  color: rgb(5, 43, 83);
+  margin-right: 30px;
+  margin-top: 0%;
+  font-size:20px;
+  font-family:'Optima';
+}
+
+
+/* .text-container {
     color: rgb(5, 43, 83);
     font-family:'Optima';
     font-size:14px;
+} */
+
+.text-container {
+  font-family:'Futura';
+  font-size:20px;
+  margin-right: 50px;
+  margin-top:7%;
 }
 
-.container {
-    display: flex;
-    /* align-items: left; */
-    flex-direction: column;
-    color: rgb(5, 43, 83);
-    margin-right: 30px;
-    margin-top: 10%;
-    font-size:20px;
-    font-family:'Optima';
-}
 
 .header {
     font-family:'Futura';
     color: rgb(5, 43, 83);
     font-size:60px;
-    position: left;
 }
 
 h1 {
@@ -81,3 +91,8 @@ h1 {
 .description {
   font-size: 20px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+

@@ -1,19 +1,11 @@
-.page-container {
+#index {
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  height: 100%;
-  width: 95%;
-  margin-top: 5rem;
-  margin: auto;
-}
+  flex-direction:row;
 
-.text-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
   color: rgb(5, 43, 83);
-  margin-right: 30px;
+  font-size:20px;
+  font-family:'Optima';
+  margin-right:30px;
 }
 
 .header {
@@ -21,10 +13,7 @@
   font-size:60px;
 }
 
-.text2-container {
-  font-family:'Futura';
-  font-size:20px;
-}
+
 
 .image-container {
   height: 100vh;

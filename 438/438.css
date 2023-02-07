@@ -69,7 +69,7 @@
 .gallery {
     height: 600px;
     width: 60%;
-    background-color: rgb(206, 206, 206);
+    background-color: rgba(5, 43, 83, 0.213);
     display:flex;
 }
 
