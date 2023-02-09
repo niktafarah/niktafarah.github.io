@@ -6,12 +6,25 @@
     <link rel="stylesheet" href="./438.js" />
     <!-- <link rel="stylesheet" href="./AboutMe.css"/> -->
   </head>
+  <style>
+    .grid { 
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+      align-items: stretch;
+      }
+    .grid img {
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+      max-width: 100%;
+    }
+    </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <nav>
         <div class="topnav">
             <a href="../index.html">Home</a>
-            <a href="./AboutMe.html">About Me</a>
-            <a href="./MyWork/MyWork.html">My Work</a>
+            <a href="../AboutMe.html">About Me</a>
+            <a href="../MyWork/MyWork.html">My Work</a>
             <a href="../Contact/contact.html">Contact</a>
         </div>
     </nav>
@@ -113,10 +126,43 @@
                         </div>
                     </div>
                 </div>
+
+                <br>
+
+                <div onclick="location.href='../Gallery/gallery.html';" style="cursor: pointer;" class="horizontal-block">
+                    <div class="description">
+                        <div class="description-text">
+                            <a class="grey-text">Continuous Assignment</a>
+                            <h2>Gallery</h2>
+                            <a>A portion of the MP2 assignment, as well as others, covering the different static and interactive animations created using p5.js
+                                Assignment covers:
+                                <ul>
+                                    <li>
+                                        Creating static images in p5.js
+                                    </li>
+                                    <li>
+                                        CSS Styling used in the portfolio
+                                    </li>
+                                    <li>
+                                        Code for Javascript
+                                    </li>
+                                </ul>
+                                <u><b>View the specifications of this assignment</b></u>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <main class="grid">
+                            <img src="1sketch.png" alt="Static sketch" >
+                            <img src="2sketch.gif" alt="Random sketch" >
+                            <img src="3sketch.gif" alt="Infinite loop sketch" >
+                            <img src="4sketch.gif" alt="Interactive sketch" >
+                            <img src="5sketch.gif" alt="Audio sketch" >
+                            <img src="6sketch.gif" alt="Audio/Visuals sketch" >
+                          </main>
+                    </div>
+                </div>
             </div>
-            
-
-
         </div>
         </font>
     </body>

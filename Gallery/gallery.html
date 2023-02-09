@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../master.css" />
+    </head>
+    
+    <style>
+        .grid { 
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          grid-gap: 20px;
+          align-items: stretch;
+          }
+        .grid img {
+          border: 1px solid #ccc;
+          box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+          max-width: 100%;
+        }
+    </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <nav>
+            <div class="topnav">
+                <a href="../index.html">Home</a>
+                <a href="./AboutMe.html">About Me</a>
+                <a href="./MyWork/MyWork.html">My Work</a>
+                <a href="../Contact/contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div class="gallery">
+            <main class="grid">
+                <img src="../438/1sketch.png" alt="Static sketch" onclick="location.href='../MP2/1sketch.html';" style="cursor: pointer;" >
+                <img src="../438/2sketch.gif" alt="Random sketch" onclick="location.href='../MP2/2sketch.html';" style="cursor: pointer;" >
+                <img src="../438/3sketch.gif" alt="Infinite loop sketch" onclick="location.href='../MP2/3sketch.html';" style="cursor: pointer;" >
+                <img src="../438/4sketch.gif" alt="Interactive sketch" onclick="location.href='../MP2/4sketch.html';" style="cursor: pointer;" >
+                <img src="../438/5sketch.gif" alt="Audio sketch" onclick="location.href='../MP2/5sketch.html';" style="cursor: pointer;" >
+                <img src="../438/6sketch.gif" alt="Audio/Visuals sketch" onclick="location.href='../MP2/6sketch.html';" style="cursor: pointer;" >
+            </main>
+        </div>
+</html>
