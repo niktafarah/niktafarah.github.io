@@ -22,10 +22,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <nav>
         <div class="topnav">
-            <a href="../index.html">Home</a>
-            <a href="../AboutMe.html">About Me</a>
-            <a href="../MyWork/MyWork.html">My Work</a>
-            <a href="../Contact/contact.html">Contact</a>
+            <a href="../index.html#intro">Home</a>
+            <a href="../index.html#section-1">About Me</a>
+            <a class="active" href="../index.html#section-2">My Work</a>
+            <a href="../index.html#section-3">Contact</a>
         </div>
     </nav>
   
@@ -97,6 +97,39 @@
                 </div>
     
                 <br>
+
+                <div onclick="location.href='../MP2/MP2.html';" style="cursor: pointer;" class="horizontal-block">
+                    <div class="description">
+                        <div class="description-text">
+                            <a class="grey-text">Mini-Project</a>
+                            <h2>Browser Extension</h2>
+                            <a>A mini project for learning Javascript and implementing those skills by making a browser extension.
+                                Project includes:
+                                <ul>
+                                    <li>
+                                        Manipulating the DOM
+                                    </li>
+                                    <li>
+                                        Make icon for extension
+                                    </li>
+                                    <li>
+                                        Create a Chrome extension
+                                    </li>
+                                </ul>
+                                <u><b>View the specifications of this mini project</b></u>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery" >
+                        <div class="videos" id="videosList">           
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                                <source src="./mp1.mp4" type="video/mp4"></source>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+    
+                <br>
     
                 <div onclick="location.href='../Cheatsheet/cheatsheet.html';" style="cursor: pointer;" class="horizontal-block">
                     <div class="description">
@@ -129,7 +162,8 @@
 
                 <br>
 
-                <div onclick="location.href='../Gallery/gallery.html';" style="cursor: pointer;" class="horizontal-block">
+
+                <div onclick="location.href='../Gallery/gallery.html';" target="_blank" rel="noopener noreferrer" style="cursor: pointer;" class="horizontal-block">
                     <div class="description">
                         <div class="description-text">
                             <a class="grey-text">Continuous Assignment</a>
@@ -152,14 +186,15 @@
                         </div>
                     </div>
                     <div class="gallery">
-                        <main class="grid">
+                        <img src="3sketch.gif" alt="Infinite loop sketch" >
+                        <!-- <main class="grid">
                             <img src="1sketch.png" alt="Static sketch" >
                             <img src="2sketch.gif" alt="Random sketch" >
                             <img src="3sketch.gif" alt="Infinite loop sketch" >
                             <img src="4sketch.gif" alt="Interactive sketch" >
                             <img src="5sketch.gif" alt="Audio sketch" >
                             <img src="6sketch.gif" alt="Audio/Visuals sketch" >
-                          </main>
+                          </main> -->
                     </div>
                 </div>
             </div>
