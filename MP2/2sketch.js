@@ -12,14 +12,14 @@ function setup() {
 }
 
 function draw() {
-    
+        
     noStroke();
     background('white');
     fill(107,142,35);
     rect(windowWidth/2,windowHeight/2, 4, 200);
 
     rect(0,windowHeight/2 + 200, windowWidth, 200);
-    
+
     translate(windowWidth/2,windowHeight/2)
     for (let i = 0; i < 20; i ++) {
         fill(233,150,122, 127);

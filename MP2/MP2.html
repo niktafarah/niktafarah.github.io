@@ -3,7 +3,21 @@
     <head>
         <link rel="stylesheet" href="../master.css"/>
         <link rel="stylesheet" href="../master.js"/>
+        <link rel="stylesheet" href="./MP2.css"/>
     </head>
+    <style>
+        .grid { 
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          grid-gap: 50px;
+          align-items: stretch;
+          }
+        .grid img {
+          border: 1px solid #ccc;
+          box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+          max-width: 100%;
+        }
+    </style>
     <nav>
         <!-- <div class="logo">
           Logo
@@ -18,48 +32,43 @@
     <body>
         <div class="page-container">
             <div class="container">
-                <h1 class="header">MP2 - *****</h1>
+                <h1 class="header">MP2 - Creative Coding Explorations</h1>
                     <p><strong>Overview and Usage</strong></p>
-                    <ol>
-                    It can be difficult to stay focused while getting work done, especially since entertainment is at a click of a button.
-                    This is why I decided to make a browser extension that creatively blocks the site I tend to get distracted on, Netflix.
-                    With this extension, while it is active, you will not be able to see any Netflix preview pictures, and to be able to see what
-                    movies and shows there are, you must individually hover over every single show and movie. This becomes tedious over time, and allows
-                    the user to think twice about wasting their time. To add on, every preview photo on Netflix will be replaced by a gif of the meme "Just Do It!", 
-                    in hopes of motivating the user to "just do it" and to stop getting distracted (as the genre titles say).
-
-                    Since my browser extension is not hosted online, in order to run the code you must download the files via GitHub and
-                    follow instruction in developer mode on Google Chrome to load an unpacked extension from your files. From there you can bookmark
-                    the extension and pull up Netflix, and the extension should be good to go.
+                    <ol>The core functionality of this project is to use p5.js to create static and dynamic sketches.
+                        In order to run my code you can click any of the images below to go to a full screen version of the code. An alternative way to get to this code is to go to My Work, 438, and Gallery.
                     <br> 
-                    <div class="gif-container">
-                        <video controls loop class="gif" src="../438/mp1.mp4" style="width:500px"></video>
-                    </div>
+                    <br>
+                        <main class="grid">
+                            <img src="../438/1sketch.png" alt="Static sketch" onclick="location.href='../MP2/1sketch.html';" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+                            <img src="../438/2sketch.gif" alt="Random sketch" onclick="location.href='../MP2/2sketch.html';" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+                            <img src="../438/3sketch.gif" alt="Infinite loop sketch" onclick="location.href='../MP2/3sketch.html';" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+                            <img src="../438/4sketch.gif" alt="Interactive sketch" onclick="location.href='../MP2/4sketch.html';" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+                            <img src="../438/5sketch.gif" alt="Audio sketch" onclick="location.href='../MP2/5sketch.html';" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+                            <img src="../438/6sketch.gif" alt="Audio/Visuals sketch" onclick="location.href='../MP2/6sketch.html';" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+                        </main>
+                    
                     </ol>
               
                     <p><strong>Development Process</strong></p>
                     <ol>
-                        <li>Before beginning this assignment, I watched and followed a long on a Youtube video
-                            about changing images on a screen into a different image (link provided in kudo section
-                            below). After learning the steps in the video and understanding the reasoning behind each
-                            step, I started working on the manifest.json file first. In that file, I named my browser extension,
-                            gave it a description, set icons for the extension, and assigned a popup.html to it. Most importantly,
-                            in the content script, I put down Netflix's website for the matches so that my browser extension 
-                            only applies to Netflix websites. I struggled a lot with this step because the tutorial said to use anyurl
-                            within the quotes, but I didn't want my extension to apply to all URLs. 
-                            <br><img class="pic" src="tutorial.png" style="width:500px"> </img>
+                        <li>Before beginning this assignment, I first followed along with a few static and dynamic
+                            example sketch tutorials on Coding Train to gather a basic understanding of the foundations
+                            of p5.js.  
+                            
                         </li>
-                        <li>Next I moved on to the content.js file. This file inlcudes a method that includes justDoIt that lets
-                            it equal the gif I wanted on Netflix's website.
-                            <br><img class="pic" src="matches.png" style="width:500px"> </img>
-                            By using the method, Element.getElementsByTagName("image"), I was able 
-                            to parse through every image on the loaded screen, and set the image to equal the new justDoIt object. I first used a for loop to go through images on the screen and randomly select a gif that I wanted to use. But I realized I just want one gif, so I don’t need to use a randomized function. 
-                            <br><img class="pic" src="random.png" style="width:500px"> </img>
-                            I took the randomized function away to see if it works, and it did. But I still wasn’t sure if a for loop was necessary.
-                            <br><img class="pic" src="content.png" style="width:500px"> </img>
+                        <li>After understanding the basic functionality in p5.js, I followed a tutorial for making my first static sketch.
+                            After following the tutorial, I thought about what I wanted to do for my unique sketch. I decided to keep the theme of all 
+                            of my sketches to be a flower. <br>
+                            <br><img id="sketch" src="../438/1sketch.png" alt="Static sketch" onclick="location.href='../MP2/1sketch.html';" target="_blank" rel="noopener noreferrer" style="cursor: pointer;"> </img><br>
+                            <br>After that, my next step was to create the same static sketch, except make it refresh to a slightly
+                            different sketch everytime the refresh button is pressed. I did so by utilizing the refresh button.
+                            The third sketch was also very similar in that regard, except instead of a random() function, I created a for loop
+                            and made the value of the petal width increase every time it went through the loop.
                         </li>
-                        <li>The rest of the steps are included setting up a popup.html for the popup and styling it using a css file. The bulk of the 
-                            project falls in manifest.json and content.js because that's where I had the most difficulty with.
+                        <li>Lastly, for sketches 5 and 6, they were very similar since they both used audio to work. Sketch 6 was particularly difficult
+                            for me, especially since my computer was being very laggy and sometimes my own microphone wouldn't work so it was difficult to know
+                            when my code wasn't working.
+                        </li>
                         </li>
                     </ol>
     
@@ -67,26 +76,23 @@
                 
                     <p><strong>Issue Deep-Dive</strong></p>
                     <ul>
-                        <li>As previously mentioned, an issue I ran into was making the browser extension Netflix specific. I began writing the code for the 
-                            extension first using the anyurl code, and later tried different ways of making it just Netflix website specific. In order to resolve it, it
-                            actually ended up being a lot simpler than I thought. At the end of the url I had to put an apostraphe and a backslash.
+                        <li>An issue I spent the longest amount of time on was sketch 4, and this was due to the fact that 
+                            I had trouble figuring out where to place my petalSize variable. The variable was to add value after every iteration.
+                            This was more of a logic error than a syntax error. I fixed this problem by taking a step back and explaining the reason
+                            for each variable and function and also running it in Codepen. These methods combined allowed me to find my solution.
                         </li>
                     </ul>
            
                 
                     <p><strong>Ideas and Future</strong></p>
                     <ul>
-                        <li>In the future, I would like to add an off switch in the pop-up that comes up on Chrome. With this,
-                            the user can have the option to stop the Netflix pictures from being blocked without actually deleting the extension.
-                            Something else I would like to add would be to completely take off any descriptions that already exist on Netflix,
-                            and not just the headlines.
+                        <li>In the future I would like to make the grass more dimension, perhaps by adding texture, movement, and shadows. 
+                            Also, for sketch 6 it would be helpful to have a button that would start and stop recording audio for visual output. 
                         </li>
                     </ul>
 
                     <p><strong>Kudos</strong></p>
-                    <a href="https://www.youtube.com/watch?v=zHIryKuhYA4">https://www.youtube.com/watch?v=zHIryKuhYA4</a>
-                    <br>
-                    <a href="https://developer.chrome.com/docs/extensions/mv3/match_patterns/">https://developer.chrome.com/docs/extensions/mv3/match_patterns/</a>
+                    <p>Kudos to my boyfriend and many, many Youtube videos to help me jog my memory about for loops.</p>
             </div>
         </div> 
     </body>
