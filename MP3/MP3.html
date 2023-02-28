@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html id="MP3">
+    <head>
+        <link rel="stylesheet" href="../master.css"/>
+        <link rel="stylesheet" href="../master.js"/>
+        <link rel="stylesheet" href="./MP3.css"/>
+    </head>
+    <style>
+        .grid { 
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          grid-gap: 50px;
+          align-items: stretch;
+          }
+        .grid img {
+          border: 1px solid #ccc;
+          box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+          max-width: 100%;
+        }
+    </style>
+    <nav>
+        <!-- <div class="logo">
+          Logo
+        </div> -->
+        <div class="topnav">
+            <a href="../index.html#intro">Home</a>
+            <a href="../index.html#section-1">About Me</a>
+            <a class="active" href="../index.html#section-2">My Work</a>
+            <a href="../index.html#section-3">Contact</a>
+        </div>
+    </nav>
+    <body>
+        <div class="page-container">
+            <div class="container">
+                <h1 class="header">MP3 - Development Toolchain</h1>
+                    <p><strong>Overview and Usage</strong></p>
+                    <ol>
+                    In my game, I replicated a two dimensional basketball game which awards the user points at 10 point increments, and once the user
+                    reaches 40 points the player wins and can choose to play again. In order to run the code you must click the link below. 
+                    <a href=niktafarah.github.io/MP3/ > Basketball Game</a>
+                    To play the game, you can click on the screen, and the ball will follow the mouse. In order to get points, you must aim the ball into the hoop
+                    or bounce off the wall. 
+
+                    <br> 
+                    <div class="gif-container">
+                        <video controls loop class="basketball" src="./MP3/basketball.mp4" style="width:500px"></video>
+                    </div>
+                    </ol>
+              
+                    <p><strong>Development Process</strong></p>
+                    <ol>
+                        <li>Before beginning this assignment, I followed the development toolchain activity from class
+                            and followed the P5 Play website's tips and tutorials. After learning the basic steps and functions
+                            I began designing the game and ideating. After learning the functions and understanding the reasoning behind each
+                            functions, I started working on declaring color constants and initializing variables. 
+                            <br><img class="pic" src="in.png" style="width:500px"> </img>
+                        </li>
+                        <li>Next I moved on to my function called SetUpBall in which I set up the shape, look, and characteristics of the ball. I 
+                            did the exact same process for the SetUpNet function which lead to my next step.
+                        </li>
+                            
+                        <li>For my next step I set up the relationship between the ball and the net. I wanted to the ball to overlap the net whenever
+                            it went through the hoop.
+                        </li>
+                            
+                        <li>Next, I made a randomized function for X and Y coordinates to change the coordinates of the ball whenever the page is reloaded 
+                            or the game is restarted.
+                            <br><img class="pic" src="random.png" style="width:500px"> </img>
+                        </li>
+                        <li>The most important function of the game was the draw function which included an if statement that directed the ball towards the location
+                            that the mouse is clicked.
+                            <br><img class="pic" src="mouse.png" style="width:500px"> </img>
+                        </li>
+                    </ol>
+    
+                    <br>
+                
+                    <p><strong>Issue Deep-Dive</strong></p>
+                    <ul>
+                        <li>I ran into many issues while making this game. The first issue was making the ball move towards the location that the mouse is clicked. I originally used 
+                            the moveTo functiom, but the issue with this was that the ball would stop moving when it moved towards where the mouse was, and it would fall down, instead
+                            of a natural throw of a ball and an angle down. To fix this, I used an if statement that stated that once the mouse is clicked the ball will move towards the mouse,
+                            but it will move in a natural motion relative to gravity. Another problem that I had was the drawScore function. I ended up resolving this by using another if statement. 
+                            Roughly, the if statement stated that if the ball overlaps with the net, the player gains ten points on the draw board.
+                        </li>
+                    </ul>
+           
+                
+                    <p><strong>Ideas and Future</strong></p>
+                    <ul>
+                        <li>In the future, I would like to change the shape of the ball, and make it more fluid, so when it hits the wall it changes the shape of the ball slightly and then
+                            goes back to the original shape. I would also like to incorporate my own design into the ball therefore when the ball hits the wall, the rotation of the ball can give a more
+                            realistic feel.
+                        </li>
+                    </ul>
+
+                    <p><strong>Kudos</strong></p>
+                    <p>Kudos to my boyfriend for acting as a rubber ducky while I explained my problems to him, and it ended up helping me so much to teach someone else.</p>
+            </div>
+        </div> 
+    </body>
+</html>
