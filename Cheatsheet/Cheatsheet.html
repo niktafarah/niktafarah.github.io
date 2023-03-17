@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./cheatsheet.css" />
     <link rel="stylesheet" href="../master.css" />
   </head>
+  <style>
+    .grid { 
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-gap: 20px;
+      align-items: stretch;
+      }
+    .grid img {
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+      max-width: 100%;
+    }
+</style>
+  <nav>
+    <div class="topnav">
+      <a href="../index.html#intro">Home</a>
+      <a href="../index.html#section-1">About Me</a>
+      <a href="../index.html#section-2">My Work</a>
+      <a class="active" href="../index.html#section-3">Contact</a>
+  </div>
+  </nav>
   <body>
-    <nav>
-      <div class="topnav">
-        <a href="../index.html">Home</a>
-        <a href="../AboutMe/AboutMe.html">About Me</a>
-        <a class="active" href="../MyWork/MyWork.html">My Work</a>
-        <a href="./Contact/contact.html">Contact</a>
-      </div>
-    </nav>
-
-    <div class="image-container">
+    <!-- <div class="image-container">
         <img class="html" src="html.jpg" alt="HTML code" />
         <img class="css" src="css.jpg" alt="CSS code" />
+    </div> -->
+    <div class="page-container">
+      <div class="container">
+        <h1>Cheatsheet</h1>
+        <p>How to create and style a navigation bar: </p>
+          <main class="grid">
+            <img src="html.jpg" alt="HTML code" />
+            <img src="css.jpg" alt="CSS code" />
+          </main>
+
+        <p>How to create a continuous scroll for the home page. For this you must set an id for 
+          each section that you want the nav bar to jump to: </p>
+          <main class="grid">
+            <img src="html.jpg" alt="Nav bar code" />
+            <img src="id.jpg" alt="Section id on div block" />
+          </main>
+
+        <p>How to change the size of an image upon hover: </p>
+          <main class="grid">
+            <img src="hover.jpg" alt="CSS for how to change an object upon hover." />
+          </main>
+
+          <p>How to select a certain number or text in an array.</p>
+          <main class="grid">
+            <img src="array.png" alt="CSS for how to change an object upon hover." />
+          </main>
+
+          <p>How to create a grid for a photo gallery:</p>
+          <main class="grid">
+            <img src="stylegrid.png" alt="HTML for putting grid in style in header" />
+            <img src="griddiv.png" alt="HTML for putting grid function in div." />
+          </main>
+      </div>
     </div>
+  </div>
 </body>
 </html>
