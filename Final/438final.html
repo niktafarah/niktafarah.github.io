@@ -32,82 +32,58 @@
         <!-- <font face="Futura"> -->
             <div class="page-container" id="page">
                 <div class="container">
-                    <h1 class="header" id="h">Final Project Prototype</h1> 
-                    <p><strong>Overview and Usage</strong></p>
-                    <ol>
-                    In my game, I replicated a two dimensional basketball game which awards the user points at 10 point increments, and once the user
-                    reaches 40 points the player wins and can choose to play again. In order to run the code you must click the link below. 
-                    <a href=niktafarah.github.io/438finalprototype/ > Mooshball </a>
-                    To play the game, you can click on the screen, and the ball will follow the mouse. In order to get points, you must aim the ball into the hoop
-                    or bounce off the wall. 
-
-                    <br> 
-                    <div class="gif-container">
-                        <video controls loop class="mooshball" src="./438finalprototype.mp4" style="width:500px"></video>
-                    </div>
-                    </ol>
-              
-                    <p><strong>Development Process</strong></p>
-                    <ol>
-                        <li>I first changed the basketball to look like a mouse and changed the background and floor to be pink.
-                            <!-- <br><img class="pic" src="in.png" style="width:500px"> </img> -->
-                        </li>
-                        <li>Next I followed the Firebase tutorial from class to set up a basic firebase.js.
-                        </li>
-                            
-                        <li>For my next step I altered the function sendMessage in my firebase.js to output a score equivalent to the finalScore when the timer hits zero in my index.js.
-                        </li>
-                            
-                        <li>Next I had to change my index.js so that it included a start up screen and a closing screen. On top of this I added a timer that would
-                            only begin when the player clicked.
-                        </li>
-                    </ol>
+                    <h1 class="header" id="h">Final Project</h1> 
+                    <h2><a href="./proposal.html">Final Project Proposal</a></h2>
+                    <h2><a href="./438finalprototype.html">Final Project Prototype</a></h2>
+                        <h2>Final Project</h2>
+                        <p><strong>Overview and Usage</strong></p>
+                        <ol>
+                        In my game, I replicated a two dimensional basketball game which awards the user points at 10 point increments, and once the user
+                        reaches 40 points the player wins and can choose to play again. In order to run the code you must click the link below. 
+                        <a href=niktafarah.github.io/438finalprototype/ > Mooshball </a>
+                        To play the game, you can click on the screen, and the ball will follow the mouse. In order to get points, you must aim the ball into the hoop
+                        or bounce off the wall. 
     
-                    <br>
-                
-                    <p><strong>Issue Deep-Dive</strong></p>
-                    <ul>
-                        <li>I ran into many issues for this final prototype, the first of which were making the timer. I fixed this issue by assigning a variable 
-                            screen to have the value of 0, and depending on whether the player had clicked or not, that number would go up and signify a new page (with an if statement).
-
-                            My next, biggest, issue was that the score that would show up when the game ended was linked to my index.js therefore it wouldn't 
-                            go to Firebase. To fix this, I used the function sendMessage(score) in firebase.js to send a score rather than message to firebase.
-                        </li>
-                    </ul>
-           
-                    <br>
-                    <p><strong>Ideas and Future</strong></p>
-                    <ul>
-                        <li>In the future, I might change the game rules and change the timer to be more than 10 seconds long. I am also ideating for something in the game
-                            that might cause penalty for the user, but I have not thought about it yet. If I don't do that, then it is likely that I will link a randomized function to the 
-                            net to make it change location. 
-                        </li>
-                    </ul>
-                    <br>
-                    <p><strong>Kudos</strong></p>
-                    <p>Kudos to Annie for helping me link my score to Firebase!</p>
-
-                    <p><strong>Project scope</strong></p>
-                    <p>Now that I have completed my prototype, I want to make a leadership board across all users (not user specific).
-                    I have added a timer to my final project which wasn't originally inn the project, and I believe this will 
-                    make the game more fun.</p>
-                    <br>
-
-                    <p><strong>Time management</strong></p>
-                    <p>I anticipated Firebase taking a long time to learn, but I still didn't anticipate how 
-                        long it would take for me to learn it. Also, I had problems deploy my website, and even now 
-                        at the time of submission, my website is not showing up and I will have to get help in class tomorrow.
-                        </p>                   
+                        <br> 
+                        <div class="gif-container">
+                            <video controls loop class="mooshball" src="./mooshball.mp4" alt= "Video of final project running" style="width:500px"></video>
+                        </div>
+                        </ol>
+                  
+                        <p><strong>Development Process</strong></p>
+                        <ol>
+                            <li>First, I utilized my getallMessages and sendMessage function to send messages to the database and retrieve 
+                                the messages later to use in the leadership board.
+                            </li>
+                            <li>Next, inside my gameOver() function, I used window.getAllMessages().then((value) to look through the array
+                                of scores given.  
+                            </li>
+                                
+                            <li>Lastly, I wanted to select the top three scores in my array (the top scores) and arrange them in my leadership board. 
+                                In order to do this I did "hiScores[0]" and so forth.
+                            </li>
+                        </ol>
+        
                         <br>
-
-                    <p><strong>Implementation plan</strong></p>
-                    <p>How has your implementation plan for your final version changed now that
-                         you have completed your prototype? Why has it changed?
-
-                         As explained earlier, I will be creating a user-wide leadership board. I have decided to change this because
-                         it will be a greater challenge than just storing the scores in Firebase, and this will be a way to practice retrieving data from Firebase.
-                        </p>                   
+                    
+                        <p><strong>Issue Deep-Dive</strong></p>
+                        <ul>
+                            <li>I ran into many issues for this final prototype. My main issue was retrieving data from the Firebase database. 
+                                How I fixed this issue is using the async function getAllMessages(). This function queries the database to get everything 
+                                in the messages collection (which held my scores).
+                            </li>
+                        </ul>
+               
                         <br>
+                        <p><strong>Ideas and Future</strong></p>
+                        <ul>
+                            <li>In the future, I might consider an option for the user to input their name or username so the leadership board
+                                can list names.
+                            </li>
+                        </ul>
+                        <br>
+                        <p><strong>Kudos</strong></p>
+                        <p>My boyfriend, Hannah, Annie, and Max.</p>
             </div>
         </div> 
     </body>
