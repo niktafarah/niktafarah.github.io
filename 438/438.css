@@ -39,7 +39,7 @@
     background-color: rgb(5, 43, 83);
     align-self: center;
     color:white;
-    transition: filter .4s;
+    transition: filter .4s; 
 }
 
 .description:hover {
@@ -51,6 +51,8 @@
     margin-top: 7%;
     margin-right: 10%;
     line-height: 2;
+    font-size:20px;
+
 }
 
 .grey-text {
@@ -120,4 +122,23 @@ video {
      position:relative;
    }
 
-   
+@media screen and (max-width: 1150px) {
+    .description-text {
+        margin-left: 10%;
+        margin-top: 7%;
+        margin-right: 10%;
+        line-height: 2;
+        font-size:15px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .description-text {
+        margin-left: 10%;
+        margin-top: 7%;
+        margin-right: 10%;
+        line-height: 2;
+        font-size:10px;
+    }
+}

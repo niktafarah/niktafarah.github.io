@@ -33,7 +33,7 @@
                     the extension and pull up Netflix, and the extension should be good to go.
                     <br> 
                     <div class="gif-container">
-                        <video controls loop class="gif" src="../438/mp1.mp4" style="width:500px"></video>
+                        <video controls loop class="gif" src="../438/mp1.mp4" style="width:500px" alt="preview video of browser extension running "></video>
                     </div>
                     </ol>
               
@@ -47,16 +47,16 @@
                             in the content script, I put down Netflix's website for the matches so that my browser extension 
                             only applies to Netflix websites. I struggled a lot with this step because the tutorial said to use anyurl
                             within the quotes, but I didn't want my extension to apply to all URLs. 
-                            <br><img class="pic" src="tutorial.png" style="width:500px"> </img>
+                            <br><img class="pic" src="tutorial.png" style="width:500px" alt="work in progress"> </img>
                         </li>
                         <li>Next I moved on to the content.js file. This file inlcudes a method that includes justDoIt that lets
                             it equal the gif I wanted on Netflix's website.
-                            <br><img class="pic" src="matches.png" style="width:500px"> </img>
+                            <br><img class="pic" src="matches.png" style="width:500px" alt="work in progress"> </img>
                             By using the method, Element.getElementsByTagName("image"), I was able 
                             to parse through every image on the loaded screen, and set the image to equal the new justDoIt object. I first used a for loop to go through images on the screen and randomly select a gif that I wanted to use. But I realized I just want one gif, so I don’t need to use a randomized function. 
-                            <br><img class="pic" src="random.png" style="width:500px"> </img>
+                            <br><img class="pic" src="random.png" style="width:500px" alt="work in progress"> </img>
                             I took the randomized function away to see if it works, and it did. But I still wasn’t sure if a for loop was necessary.
-                            <br><img class="pic" src="content.png" style="width:500px"> </img>
+                            <br><img class="pic" src="content.png" style="width:500px" alt="work in progress"> </img>
                         </li>
                         <li>The rest of the steps are included setting up a popup.html for the popup and styling it using a css file. The bulk of the 
                             project falls in manifest.json and content.js because that's where I had the most difficulty with.
