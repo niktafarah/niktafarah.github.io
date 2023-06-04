@@ -6,29 +6,63 @@
   font-size:20px;
   font-family:'Optima';
   margin-right:30px;
+  margin-top: 5%;
 }
+
+.header1 {
+  font-family:'Futura';
+  /* font-size:60px; */
+  color: rgb(249, 183, 182);
+  text-align: left;
+  padding: 10px;
+  font-size:80px;
+  width: 60%;
+}
+
+
 
 .header {
   font-family:'Futura';
   font-size:60px;
+  color: rgb(5, 43, 83);
+  text-align: left;
+  padding: 10px;
 }
 
 .text-container {
   width: fit-content;
-}
-
-.image-container {
-  height: 100vh;
-  width: 60vw;
+  margin-left:20px;
   float: right;
 }
 
-.portrait {
+/* .image-container {
+  height: 100%;
+  width: 60vw;
+  float: left;
+  background-image: url(portpic.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-top:30px;
+  background-position: 5%;
+} */
+
+.image-container {
+  height: 100%;
+  width: 60vw;
+  float: left;
+  background-image: url(portpic.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  margin-top:30px;
+  background-position: 5%;
+}
+
+/* .portrait {
   float: right;
   height: 100%;
   width: 100%;
   object-fit: cover ;
-}
+} */
 
 a.button1{
   display:inline-block;
@@ -65,16 +99,24 @@ a.button1:hover{
 @media screen and (max-width: 700px) {
   #index {
     flex-direction: column;
+    margin-right: 0px;
   }
   .image-container {
-    height: 20%;
+    height: 30rem;
     width: 100%;
     float: right;
+    background-size: cover;
   }
-  
-  .portrait {
+  #exp-header {
+    font-size:40px;
+  }
+  .text-container {
+    margin-top: 10px;
+    margin-left: auto;
+  }
+  /* .portrait {
     height: 100%;
     width: 100%;
     object-fit:cover ;
-  }
+  } */
 }
