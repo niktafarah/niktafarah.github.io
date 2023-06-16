@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll Hide</title>
+  <style>
+    /* CSS styling */
+    #hiddenDiv {
+    opacity: 0;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.5s ease;
+    }
+
+    /* Additional styling for demonstration */
+    body {
+      height: 2000px;
+      margin: 0;
+    }
+
+    #content {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>Scroll down to reveal the hidden div!</h1>
+  </div>
+  <div id="hiddenDiv">
+    <h2>Hidden Content</h2>
+    <p>This div is initially hidden and will only appear when you scroll down.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
