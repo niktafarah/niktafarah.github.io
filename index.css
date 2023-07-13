@@ -97,11 +97,21 @@
 
 #section1 {
   height:auto;
-
+  align-items: center;
   opacity: 0;
   background-color: #ffffff;
   padding: 20px;
   transition: opacity 0.5s ease;
+}
+
+#container-sect1 {
+  align-items: center;
+  margin-right: 0px;
+}
+
+#container-sect2 {
+  align-items: center;
+  margin-right: 0px;
 }
 
 /*Button styling*/
