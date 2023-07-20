@@ -1,60 +1,19 @@
 
-/* .header {
-  font-family:'Futura';
-  font-size:60px;
-  color: rgb(5, 43, 83);
-  text-align: center;
-  padding: 10px;
-} */
-
-/* .text-container {
-  width: fit-content;
-  margin-left:20px;
-  float: right;
-  margin-top: 0%;
-} */
-
-/* .image-container {
-  height:100%; 
-  width:60vh;
-  float: left;
-  margin-top:30px;
-  background-image: url(portpic.png);
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: 5%;
-} */
-
-/* .image-container {
-  height: 100%;
-  width: 60vw;
-  float: left;
-  margin-top:30px;
-  background-image: url(portpic.png);
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: 5%;
-} */
-
-/* .image-container {
-  height: 100%;
-  width: 60vh;
-  object-fit:contain;
-  flex-direction: column;
-}
-
-.portrait {
-  height: 100%;
-  margin-top: 7%;
-  width: 100%;
-  object-fit: contain ;
-} */
-
-
 #intro {
   margin-bottom: 60px;
   height:min-content;
 }
+
+h1 {
+  color: rgb(5, 43, 83);
+  text-align: left;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Optima';
+  font-weight:bolder;
+  width: 100%;
+} 
+
 
 /*Intro stying*/
 #index {
@@ -88,31 +47,14 @@
   }
   
   #headerintro {
-    text-align: center;
-
     background-color: #ffffff;
     padding: 20px;
-    text-align: center;
   }
 
-#section1 {
-  height:auto;
-  align-items: center;
-  opacity: 0;
-  background-color: #ffffff;
-  padding: 20px;
-  transition: opacity 0.5s ease;
-}
+  #headerIntro em {
+    text-align:center;
+  }
 
-#container-sect1 {
-  align-items: center;
-  margin-right: 0px;
-}
-
-#container-sect2 {
-  align-items: center;
-  margin-right: 0px;
-}
 
 /*Button styling*/
 .button-container {
@@ -123,7 +65,6 @@
   margin-top: 20px;
   font-size: 20px;
 }
-
 a.button1{
   display:inline-block;
   padding:0.3em 1.2em;
@@ -138,101 +79,134 @@ a.button1{
   text-align:center;
   transition: all 0.2s;
 }
-
 a.button1:hover{
   background-color:#846fc987;
 }
 
-/*Section 2*/
-#section-2 {
-    height:auto;
-    max-width: 800px;
-    margin: 0 auto;
-    /* padding: 40px; */
-    display: flex;
-    flex-direction: column;
+
+/*Section 1 styling*/
+#section-1 {
+  height:auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
 }
-  .header {
-    text-align: left;
-  }
+
+#container-1 {
+  align-items: center;
+  margin-right: 0px;
+}
 
 
 /*Section 2 styling*/
 #section-2 {
-    max-width: 800px;
-    margin: 0 auto;
-    /* padding: 40px; */
-    display: flex;
-    flex-direction: column;
+  height:auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
 }
 
-  .header {
-    text-align: left;
-  }
-
-  @media screen and (max-width: 480px) {
-    .experiences {
-      align-items: left;
-    }
-  }
-
-
-/* @media screen and (max-width: 700px) {
-  #index {
-    flex-direction: column;
-    margin-right: 0px;
-  }
-  .image-container {
-    height: 30rem;
-    width: 100%;
-    float: right;
-    background-size: cover;
-  }
-  #exp-header {
-    font-size:40px;
-  }
-  .text-container {
-    margin-top: 10px;
-    margin-left: auto;
-  }
-  .portrait {
-    height: 100%;
-    width: 100%;
-    object-fit:cover ;
-  }
-} */
-
-/* @media screen and (max-width: 479px) {
-  .image-container {
-    z-index: 1;
-    width: 100%;
-    height: 64vh;
-    background-image: url(portpic.png);
-    background-position: 50%,0 0;
-    background-repeat: no-repeat, repeat;
-    background-size: contain, auto;
-    position: relative;
-  } 
+#container-2 {
+  align-items: center;
+  margin-right: 0px;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
-@media screen and (max-width: 991px) {
-  .image-container {
-    background-image: url(portpic.png);
-    background-position: 50%,0 0;
-    background-repeat: no-repeat, repeat;
-    background-size: contain, auto;
-  } 
-} */
+.experiences {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+}
 
-/* .image-container {
-  width: 50%;
-  background-image: url(portpic.png);
-  background-position: 0 0, 50%,0 0;
-  background-repeat: no-repeat, repeat, repeat;
-  background-size: auto, contain, auto;
-} */
+.ind-exp {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-direction:row;
+}
 
+.ind-exp a:hover {
+  color: rgb(231, 137, 234);
+}
 
+.info {
+  height:auto;
+  display:block;
+  width: 40%;
+}
+
+.info h1 {
+  color: white; 
+  margin: 6%;
+  margin-bottom: 2%;
+}
+
+.info h2 {
+  color: white;
+  margin: 6%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.text {
+  color: white;
+  margin: 6%;
+  font-size: 18px;
+  margin-top: 2%;
+}
+
+#HTBI {
+  background-color: #E77971;
+}
+
+#HTBI-pic {
+  background-color: hsla(4, 71%, 67%, 0.312);
+}
+
+.previewpic-1  {
+  width:100%;
+  height:;
+  /* margin-left: 35px; */
+  margin-left:0px;
+}
+
+.previewpic-1 img {
+  align-items: center;
+  object-fit:fill;
+  
+}
+
+#betterme {
+  background-color: #5bacbf;
+}
+
+#betterme-pic {
+  background-color:  #6cd1e84c;
+}
+
+#spotify {
+  background-color: #000000;
+}
+
+#spotify-pic {
+  background-color: #1db954;
+}
+
+.pic {
+  height:500px;
+  display:block;
+  background-color: rgb(221, 216, 189);
+  width: 60%;
+  margin: 0;
+  margin-left: 35px;
+}
 
 @media screen and (max-width: 480px) {
   .container {
@@ -258,35 +232,15 @@ a.button1:hover{
     text-align: center;
     font-size: 20px;
   }
+
+  .experiences {
+    align-items: left;
+  }
+  .header {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-height: 1000px) {
 
-}
-
-
-
-/* CSS styling */
-#hiddenDiv {
-  opacity: 0;
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-  transition: opacity 0.5s ease;
-}
-
-#hiddenDiv.show {
-  opacity: 1;
-}
-
-/* Additional styling for demonstration */
-body {
-  height: 2000px;
-  margin: 0;
-}
-
-#content {
-  background-color: #ffffff;
-  padding: 20px;
-  text-align: center;
 }
