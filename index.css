@@ -120,16 +120,23 @@ a.button1:hover{
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   /* background-color: aqua; */
 }
 
 .ind-exp {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
   margin: 0;
-  display: flex;
-  flex-direction:row;
+  /* display: flex;
+  flex-direction:row; */
+  display: grid;
+
+}
+
+.ind-exp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .ind-exp a:hover {
@@ -137,9 +144,12 @@ a.button1:hover{
 }
 
 .info {
-  height:auto;
+  /* height:auto;
   display:block;
-  width: 40%;
+  width: 40%; */
+
+  height: 100%;
+  width: 100%;
 }
 
 .info h1 {
@@ -172,15 +182,10 @@ a.button1:hover{
 
 .previewpic-1  {
   width:100%;
-  height:;
   /* margin-left: 35px; */
+  object-fit:scale-down;
   margin-left:0px;
-}
 
-.previewpic-1 img {
-  align-items: center;
-  object-fit:fill;
-  
 }
 
 #betterme {
@@ -200,12 +205,16 @@ a.button1:hover{
 }
 
 .pic {
-  height:500px;
+  /* height:500px;
   display:block;
+  width: 60%; */
   background-color: rgb(221, 216, 189);
-  width: 60%;
   margin: 0;
   margin-left: 35px;
+  object-fit: contain;
+
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -241,6 +250,22 @@ a.button1:hover{
   }
 }
 
-@media screen and (max-height: 1000px) {
+@media screen and (max-width: 1481px) {
+  .ind-exp {
+    display:flex;
+    flex-direction:column;
+    margin-left:0;
+  }
+
+  .pic {
+    margin-left: 0;
+    width: 100%;
+    /* height:max-content; */
+  }
+
+  .info {
+    width: 100%;
+  }
 
 }
+
